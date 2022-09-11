@@ -71,7 +71,7 @@ $h-1-font-size: var(--h1-font-size, $h-1) !default;
 
 notice: choosing vw, vh will not zoom
 
-### how to reuse in many places font-size
+### How to reuse in many places font-size
 
 1.
 
@@ -100,5 +100,41 @@ h1 {
     :root {
         --h1-font-size-xl: 3rem;
     }
+}
+```
+
+#Flex Box - CSS
+
+Links:
+
+1. [Navigation css](https://codepen.io/kevinpowell/pen/JjrKmwy?editors=1100)
+1. [3-columns css](https://codepen.io/kevinpowell/pen/oNGLaKq?editors=1100)
+1. [flex vs grid css](https://www.youtube.com/watch?v=3elGSZSWTbM)
+
+## Navigation CSS
+
+```
+.nav-list {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav-list > li {
+
+}
+```
+
+## 3-columns CSS
+
+```
+.columns {
+    display: flex;
+    gap: 2rem;
+}
+
+.columns > * {
+    flex: 1;
 }
 ```
